@@ -1,4 +1,4 @@
-export type User = {
+export interface Payment {
     _id: string;
     name: string;
     email: string;
