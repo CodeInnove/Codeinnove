@@ -1,4 +1,4 @@
-export type Categorys = {
+export type Category = {
     _id: string;
     name: string;
     email: string;
