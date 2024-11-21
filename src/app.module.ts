@@ -10,9 +10,11 @@ import { ReviewsModule } from './reviews/reviews.module';
 import { PaymentsModule } from './payments/payments.module';
 import { CategorysModule } from './categorys/categorys.module';
 import { SkillsModule } from './skills/skills.module';
+import { PrismaModule } from './prisma/prisma.module';
 
 @Module({
-  imports: [UsersModule, CompaniesModule, EnterpriseModule, ProjectsModule, ProposalsModule, ReviewsModule, PaymentsModule, CategorysModule, SkillsModule],
+  imports: [UsersModule,  
+    PrismaModule],
   controllers: [AppController],
   providers: [AppService],
 })
