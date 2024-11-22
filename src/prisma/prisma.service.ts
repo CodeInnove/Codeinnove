@@ -19,3 +19,13 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
     });
   }
 }
+/* Este método é responsável por configurar um listener para o evento 
+beforeExit do processo Node.js.
+
+process.on('beforeExit', ...): Registra um listener que será chamado 
+quando o processo Node.js estiver prestes a sair.
+
+await app.close(): Quando o evento beforeExit é emitido, o método 
+app.close() é chamado, que encerra a aplicação NestJS. Isso é útil 
+para garantir que todos os recursos sejam liberados corretamente 
+antes que o processo termine.*/
